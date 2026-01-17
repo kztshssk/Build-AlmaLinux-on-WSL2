@@ -29,6 +29,9 @@ try {
 
     Pop-Location
 
+    # WSLをアップデート
+    Write-Host "WSLを最新バージョンにアップデート中..."
+    wsl --update
     # WSLにインポート
     Write-Host "WSL2にインポート中..."
     $rootfsPath = Join-Path $extractPath "install.tar.gz"
